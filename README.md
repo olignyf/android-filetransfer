@@ -12,7 +12,7 @@ git clone https://github.com/gbssg/android-filetransfer.git
 # Go into the repository
 cd android-filetransfer
 # Install dependencies and run the app
-npm install && npm start
+npm install && gulp && npm start
 ```
 
 #### First-ever installation

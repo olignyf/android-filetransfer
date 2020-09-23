@@ -34,6 +34,7 @@
     "autoprefixer": "^6.3.6",
     "chai": "^3.5.0",
     "del": "^2.2.0",
+    "electron-rebuild": "^2.0.3",
     "gulp": "^3.9.1",
     "gulp-cached": "^1.1.0",
     "gulp-concat": "^2.6.0",
