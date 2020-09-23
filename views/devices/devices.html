@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>#</th>
+        <th>Device Name</th>
+        <th>Manufacturer</th>
+        <th>Serial No.</th>
+        <th>VID</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="device in devices track by $index">
+            <td>{{$index + 1}}</td>
+            <td><a routerLink="/devices/{{$index}}" routerLinkActive="active">{{device.deviceName}}</a></td>
+            <td>{{device.manufacturer}}</td>
+            <td>{{device.serialNumber}}</td>
+            <td>{{device.vendorId}}</td>
+        </tr>
+    </tbody>
+</table>

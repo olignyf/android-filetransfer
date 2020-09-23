@@ -8,8 +8,13 @@
         .config(['$routeProvider', function($routeProvider) {
 
             $routeProvider.when('/', {
-                templateUrl: templateUrl + '/home/home.html',
-                controller: 'homeController'
+                templateUrl: templateUrl + '/devices/devices.html',
+                controller: 'devicesController'
+            });
+
+            $routeProvider.when('/devices/:index', {
+                templateUrl: templateUrl + '/devices/device.html',
+                controller: 'deviceController'
             });
 
             $routeProvider.when('/sync', {
@@ -17,9 +22,9 @@
                 controller: 'syncController'
             });
 
-            $routeProvider.when('/device', {
-                templateUrl: templateUrl + '/device/device.html',
-                controller: 'deviceController'
+            $routeProvider.when('/devices', {
+                templateUrl: templateUrl + '/devices/devices.html',
+                controller: 'devicesController'
             });
 
             $routeProvider.when('/settings', {

@@ -48,8 +48,8 @@ describe('Settings', function() {
 
     it('should return the observalbe paths as array', function() {
         instance.addPath({
-            remote: "/test/remote/path/sync/",
-            local: "/test/local/path/sync/",
+            remote: "C:/dev/android-filetransfer-olignyf/test/remote",
+            local: "C:/dev/android-filetransfer-olignyf/test/local",
             flags: {
                 recursive: true,
                 direction: 0,
@@ -59,9 +59,9 @@ describe('Settings', function() {
         });
 
         let paths = instance.paths[1].getObservable();
-
+ console.log('paths', paths)
         expect(paths).to.not.be.undefined;
         expect(paths.length).to.equal(6);
-        expect(paths[0]).to.contain('/test/remote/path/sync/**/*.{css,js}');
+        expect(paths[0]).to.contain('C:\\dev\\android-filetransfer-olignyf\\test\\remote\\**/*.{css,js}');
     });
 });

@@ -11,8 +11,8 @@
                 ],
                 "extension": "*.txt"
             },
-            "local": "/Users/Jan/Documents/GitHub/android-filetransfer/test/from/",
-            "remote": "/Users/Jan/Documents/GitHub/android-filetransfer/test/to/",
+            "local": "c:/dev/android-filetransfer-oligny/test/local/",
+            "remote": "c:/dev/android-filetransfer-oligny/test/remote/",
             "timestamp": "2016-05-19T15:22:37.791Z"
         }
     ]
